@@ -41,3 +41,54 @@ function writetask() {
     }
 
 }
+
+
+
+var seconds = document.getElementById("seconds");
+var minutes = document.getElementById("minutes");
+var hours = document.getElementById("hours");
+var start = document.getElementById("start");
+var stop = document.getElementById("stop");
+var reset = document.getElementById("reset");
+var Interval;
+var sec = 0;
+var min = 0;
+//var hrs = 0;
+start.onclick = function() {
+
+    clearInterval(Interval)
+    Interval = setInterval(startTimer, 1000); // setinterval calls the function for the specified interval (here 1000 miliseconds = 1 second)
+    // it will stop only when clearInterval function  is called 
+}
+
+stop.onclick = function() {
+
+    clearInterval(Interval);
+}
+
+reset.onclick = function() {
+
+    clearInterval(Interval);
+    sec = 0;
+    min = 0;
+    seconds.innerHTML = sec;
+    minutes.innerHTML = min;
+}
+
+function startTimer() {
+    sec++;
+
+    if (sec <= 60) {
+        seconds.innerHTML = sec + " seconds";
+    }
+
+    if (sec > 60) {
+        min = Math.floor(sec / 60);
+        minutes.innerHTML = min + " minutes";
+        seconds.innerHTML = (sec % 60) + " seconds";
+
+    }
+
+
+
+};
