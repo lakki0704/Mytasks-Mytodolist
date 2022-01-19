@@ -74,3 +74,77 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.timer {
+            width: 75%;
+            margin: 0 auto;
+        }
+        
+        #start {
+            width: 25%;
+            height: 50px;
+            border: solid;
+            border-color: rgb(8, 110, 110);
+            border-radius: 1.3em;
+        }
+        
+        #start:hover {
+            background-image: linear-gradient(rgb(1, 1, 37), rgb(50, 50, 51));
+            color: wheat;
+        }
+        
+        #stop {
+            width: 25%;
+            height: 50px;
+            border: solid;
+            border-color: rgb(8, 110, 110);
+            border-radius: 1.3em;
+        }
+        
+        #stop:hover {
+            background-image: linear-gradient(rgb(1, 1, 37), rgb(50, 50, 51));
+            color: wheat;
+        }
+        
+        #reset {
+            width: 25%;
+            height: 50px;
+            border: solid;
+            border-color: rgb(8, 110, 110);
+            border-radius: 1.3em;
+        }
+        
+        #reset:hover {
+            background-image: linear-gradient(rgb(1, 1, 37), rgb(50, 50, 51));
+            color: wheat;
+        }
+        
+        .minutes {
+            padding: 10px;
+            height: 3.5em;
+            border: solid;
+            border-color: beige;
+        }
+        
+        .seconds {
+            padding: 10px;
+            height: 3.5em;
+            border: solid;
+            border-color: beige;
+        }
+        
+        .row {
+            margin: 0 auto;
+        }
+        
+        #minutes {
+            font-weight: 700;
+            color: rgb(1, 1, 29);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        #seconds {
+            font-weight: 700;
+            color: rgb(1, 1, 29);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
