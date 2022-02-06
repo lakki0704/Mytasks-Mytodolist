@@ -12,6 +12,11 @@
     -webkit-transform-style: flat;
 }
 
+.strike {
+            text-decoration: line-through;
+        }
+        
+
 .heading {
     font-size: 4vw;
     font-family: sans-serif;
