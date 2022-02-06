@@ -23,6 +23,17 @@ function addtask() {
 
 
 }
+function markDone(item) {
+
+    item.classList.toggle("strike");
+    //     var x = document.getElementById("message");
+    //     x.classList.toggle("message1");
+}
+
+function remove(item) {
+
+    item.remove();
+}
 
 
 function writetask() {
