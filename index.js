@@ -8,19 +8,23 @@ function myfunction() {
 }
 
 function addtask() {
-
+    // var i = 0;
     var x = document.getElementById("Task1");
     var newtask = x.value;
 
     if (newtask != " ") {
-        var item = document.createElement("li");
-        item.innerHTML = newtask;
+        var item = document.createElement("p");
+        item.innerHTML = newtask + '<input type="button" class="done" onclick="markDone(this.parentNode)"  value="&#x2713;" /> ' + '<input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" /> ';
+        item.classList.add("itemss");
+        // item.setAttribute('id', 'hello' + i);
         document.getElementById("yourtask").appendChild(item);
+
+
     } else {
         alert('Please enter task! ');
 
     }
-
+  
 
 }
 function markDone(item) {
